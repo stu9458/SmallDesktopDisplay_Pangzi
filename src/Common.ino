@@ -30,8 +30,9 @@ void PowerOn_Loading(uint8_t delayTime)           //开机联网显示的进度�
   clk.setTextDatum(CC_DATUM);                     //显示对齐方式
   clk.setTextColor(TFT_GREEN, 0x0000);            //文本的前景色和背景色
   clk.drawString("Connecting to WiFi",100,40,2);  //显示文本
-  clk.pushSprite(20,110);                         //Sprite中内容一次推向屏幕
+  clk.pushSprite(20,125);                         //Sprite中内容一次推向屏幕
   clk.deleteSprite();                             //删除Sprite
+  DisplayLogo();                                  //顯示開機Logo
   loadNum += 1;                                   //进度条位置变化，直到加载完成
   if(loadNum>=194){
     loadNum = 194;

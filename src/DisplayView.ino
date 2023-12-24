@@ -21,10 +21,7 @@ bool tft_output(int16_t x, int16_t y, uint16_t w, uint16_t h, uint16_t* bitmap)
 }
 
 void DisplayLogo() {
-  tft.setViewport(0, 20, 240, 200);               //中间的显示区域大小
-  tft.fillScreen(0x0000);                         //清屏
-  TJpgDec.drawJpg(0,0,keyes_logo, sizeof(keyes_logo));//顯示開機Logo
-  delay(3000);
+  TJpgDec.drawJpg(60,0,keyes_logo, sizeof(keyes_logo));//顯示開機Logo
 }
 
 // 太空表主结构

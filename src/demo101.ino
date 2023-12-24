@@ -35,8 +35,6 @@ void setup()
   
   connect_wifi();                                 //联网处理
   UDPTimeInit();                                  //初始化时间服务
-  DisplayLogo();
-  delay(3000);
   MainView();                                     //太空表主结构
 //  getCityCode();                                  //通过IP地址获取城市代码
   CityWeaterShow();                           //获取天气信息
