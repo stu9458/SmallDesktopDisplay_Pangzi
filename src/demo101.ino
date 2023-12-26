@@ -32,7 +32,6 @@ void setup()
 //  delay(2550);
 //  tft.fillScreen(0x0000);
 //
-  
   connect_wifi();                                 //联网处理
   UDPTimeInit();                                  //初始化时间服务
   MainView();                                     //太空表主结构
