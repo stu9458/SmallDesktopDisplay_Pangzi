@@ -10,7 +10,7 @@ void TFTDisplayInit(){
   TJpgDec.setJpgScale(1);                         //设置放大倍数
   TJpgDec.setSwapBytes(true);                     //交换字节
   TJpgDec.setCallback(tft_output);                //回调函数tft_output()
-  digitalWrite(TFT_BL, LOW);
+  //digitalWrite(TFT_BL, LOW);
 }
 
 //显示回调函数
